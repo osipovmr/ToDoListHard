@@ -1,6 +1,6 @@
 .inputTask {
     display: grid;
-    grid-template-columns: 1fr 50px 50px;
+    grid-template-columns: 30px auto 50px 50px;
     margin-bottom: 15px;
     background: #DBE2EF;
     border-radius: 5px;
@@ -10,14 +10,17 @@
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-        padding: 12px 15px;
+        padding: 12px 2px;
        
     }
 
     &Checkbox {
-        width: 20px;
-        height: 20px;
+
         cursor: pointer;
+        width: 20px;
+        top: 1em;
+       
+
     }
 
     &Title {

@@ -30,8 +30,7 @@ export const InputTask: React.FC<InputTaskProps> = ({
 
     return (
         <div className = {styles.inputTask}>
-            <label className={styles.inputTaskLabel}> 
-                <input
+            <input
                     type="checkbox"
                     disabled={isEditMode}
                     checked={checked}
@@ -45,6 +44,8 @@ export const InputTask: React.FC<InputTaskProps> = ({
                         }
                     }}
                 />
+            <label className={styles.inputTaskLabel}> 
+                
                 { isEditMode ? (
                     <input
                     value={value}
@@ -92,6 +93,7 @@ export const InputTask: React.FC<InputTaskProps> = ({
                  }
              }}
             />
+            
         </div>
     )
 };
